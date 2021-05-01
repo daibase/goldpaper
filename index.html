@@ -1,82 +1,116 @@
 <!doctype html>
 <html>
+  <link rel="shortcut icon" href="img/daix.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body{padding: 5%;font-family:formal, helvetica, helvetica nueve, times new roman, ubuntu, robotica;font-size:1.3em}
+    body{padding: 0 5%;font-family:formal, helvetica, helvetica nueve, times new roman, ubuntu, robotica;font-size:1em}
     h1,h2,h3{text-align:center}
+    table{padding:0%;border-left:1px solid #F5AC37}
+    @media(min-width:641px){body{ padding: 15%;font-size:1.3em} table{padding:-5% 5%}
+}
   </style>
   <body>
     <h1>GoldPaper</h1>
     <h2>Daibase Protocol</h2>
     <h3>v0.1.48</h3>
-    <h4>(Updated 2021-04-30)</h4>
+    <h5>(Updated 5th of May, 2021)</h5>
     <hr>
     <h4>Abstract</h4>
     Daibase Protocol is a decentralized, Central Bank — a Reserve Bank.
     <h4>Index of Contents</h4>
     <table>
       <tr><th></th><th></th></tr>
-      <tr><td></td><td></td></tr>
+      <tr><td><b>Introduction</b></td><td></td></tr>
+      <tr><td>Problem Statement</td><td>1</td></tr>
+      <tr><td>Moving Components</td><td>2</td></tr>
+      <tr><td>Economic Model</td><td>3</td></tr>
+      <tr><td>Monetory Policy</td><td>4</td></tr>
+      <tr><td>Governance</td><td>5</td></tr>
+      <tr><td>The KingMaker</td><td>6</td></tr>
+      <tr><td>Elasticity & Dynamics</td><td>7</td></tr>
+      <tr><td>Interoperability</td><td>8</td></tr>
+      <tr><td><b>Supplement - I</b></td><td></td></tr>
+      <tr><td>Stablecoin Substitute</td><td>9</td></tr>
+      <tr><td>Derivatives & higher order trading</td><td>10</td></tr>
+      <tr><td>Lend, Borrow & Re-leverage</td><td>11</td></tr>
+      <tr><td>Hedge-fund Cross-Stabilization</td><td>12</td></tr>
+      <tr><td>Synthetics & Indexes</td><td>13</td></tr>
+      <tr><td>Algorithmic Stablecoins: Put & Call Options</td><td>14</td></tr>
+      <tr><td>Algorithmic Stablecoins: StableSwaps</td><td>15</td></tr>
+      <tr><td>Secret Spice</td><td>16</td></tr>
+      <tr><td><b>Supplement - II</b></td><td></td></tr>
+      <tr><td>Short-term Roadmap</td><td>17</td></tr>
+      <tr><td>End-goals and Vision</td><td>18</td></tr>
     </table>
     <h4>Introduction</h4>
-    In today's multi-trillion dollar digitally-decentralized economy, speculative cryptocurrencies are ubiquitous to De. Finance users and institutions alike. They illuminate a multiverse of possibilities and oppurtunites with their inherent qualities.
-    <br>However, owing to their volatile nature, they are not well-suited for denominating a stable value of account.
-    <h4>Components</h4>
-    Daibase Protocol "mints" DAIX tokens whenever a compatible version of DAI is delivered into the Daibase smart contract.
-    All direction, governance and future decisions that modify, elaborate or dissolve the Daibase Protocol are made by DAOX holders. DAOX are a form of governance rights that enable their bearer to dictate this Protocol's path of evolution.
-    <h4>Monetary Policy</h4>
-    DAIX and DAOX can be traded freely in the open-markets (initially, an Automated Market Maker exchange). They can be bought, sold, lent, borrowed, mortgaged, collaterallized, staked, pledged, retokenized or leveraged in other possible ways. They are immutable and fungible, akin to cash, for they cannot be selectively censored. This is in stark contrast to today's stablecoins like AMPL, USDC, BUSD, USDT, GUSD, etc. that are authored and controlled by centralized custodians, validators, princpals, issuers et.al.<br>
-    DAIX work on a Protocol Controlled Value (PCV) based model that is governed by the DaixDAO. It can be utilized for rebalancing pool pricing, forking liquidity to other DEXes, repaying dissolutions or simply a store of ever-increasing liquidity. This model paired with the inherent tokenomics of DAIX give birth to an ever-increasing trifecta of growth: Liquidity, Total Value Locked (TVL) and Market Capitaliztion. These three key performance metrics are designed to keep growing forever inside the Daibase.
+    In today's multi-trillion dollar digitally-decentralized economy, speculative cryptocurrencies are ubiquitous to De-Fi users and institutions alike. They illuminate a multiverse of possibilities and oppurtunites with their inherent qualities.
+    <br><br>However, owing to their volatile nature, these are not well-suited for denominating a stable value of account.
+    <h4>DAIX</h4>
+    A <b><code>DAIX</code></b>  is a <b><code>type</code></b> of tokens that follow the Daibase Protocol. They come in many forms and flavors! There can be DAIX tokens on Ethereum blockchain, there can be DAIX on xDAI Chain, or even on the B.S.C. or some other modern blockchain. At their core, all DAIX tokens are <i>a fungible unit of <b>Elastic Currency</b></i> – a recent innovation of the past years in the De-Fi realm. Such assets are self-evolving quantitatively (which means, that their supply numbers change frequently) in reaction to their real-life market conditions and circumstances. Inherently, they tend to be a gauge of market-velocity and are thus considered a <i>safe hedge</i> during uncertain financial overcasts.<br><br>
+    The basic DAIX mechanism consists of inflating the total supply and distributing it <i>pro-rata</i> among the shareholders when demand for such assets exceeds their supply. The chief indicator of such a situation is the asset's price overshadowing its "target price".
+    <h4>Problem Statement</h4>
+    An overt economic fault is introduced with Elastic Supply tokens when they conduct a "pre-sale" and limit the issuance and the underlying elasticity as a function of "network weight", a.k.a. "non-dilutive" market-share.<br>
+    <br>This drawback deems every shareholder susceptible to high volatility due to all other trader's dealing such assets for profits more like a regular stock (Store of value), believing them to appreciate in price, instead of a stable currency (Medium of Exchange) that should be used for its non-volatile qualities.<br>
+    In such a model, how-so-ever big the project might become, this inherent volatility problem never ends. These tokens end up becoming the ironical ailment that they initially had set out to cure: i.e., <i>Speculative Financial Instruments</i>. Being totally uncollateralized adds fuel to the fire when they enter the deadly debase spirals. This slowly
+
+
+    <h4>Moving Components</h4>
+    Daibase Protocol "mints" DAIX tokens whenever a compatible version of DAI is delivered into the Daibase smart contract.It allows anyone to issue new DAIX at any point in time, thanks to Smart Contracts and their immutability.<br>
+    <br>All direction, governance and future decisions that modify, elaborate or dissolve the Daibase Protocol are made by DAOX holders. DAOX are a form of governance rights that enable their bearer to dictate this Protocol's path of evolution.<br>
+    <br>A notable difference that such a mechanism creates is that despite the **DAIX being Elastic and uncollateralized**, all the Protocol itself is controlled by real liquidity, governed by the hyperbolic monetary policy of Automated Market-Making protocols, like HoneySwap.
     <h4>Economic Model</h4>
     DAIX can only ever be created through Parti'ing. The <code>Parti()</code> is a <code>public</code> function that "mints" (issues) new DAIX tokens into existance. These new tokens are delivered to the minter at existing market rates, and thus, do not incur any slippage (unlike AMMs) or additional fees. The <code>Partied</code> event is emitted to the blockchain and consists of helper parameters designed to aid minting from any other smart contract. These features enable other external smart contracts to be written for Daibase Protocol that can execute any arbitrary logic based on the arguments returned upon parti'ing.
-    <br><i>Parti is a short-hand for <b>parti</b>cipating in Daibase TVL and PCV growth.</i>
+    <br><i>(Parti is a short-hand for <b>parti</b>cipating in Daibase TVL and PCV growth.)</i><br>
     <br>DAIX can only be destroyed by passing a dissolution vote by the DaixDAO. Such an event slashes all outstanding supply and distributes the PCV pro-rata to all holders. 10% of PCV is retained and it serves as future TVL for the continuation of Protocol. It is important to note that this event can be triggered only when 80%+1 DAOX vote in favour of Dissolution. Game-theoretically, it is only feasible when the Protocol is over-collateralized: i.e., the PCV is greater than 50% of the Market Capitalization of DAIX. This event does not affect DAOX holdings and distributes the native coin (AVAX, BNB, CELO, XDAI, ETH, FTM etc.) of the blockchain to the prior DAIX hoolders.
+    <h4>Monetary Policy</h4>
+    DAIX and DAOX can be traded freely in the open-markets (initially, an Automated Market Maker exchange). They can be bought, sold, lent, borrowed, mortgaged, collaterallized, staked, pledged, retokenized or leveraged in other possible ways. They are immutable and fungible, akin to cash, for they cannot be selectively censored. This is in stark contrast to today's stablecoins like AMPL, USDC, BUSD, USDT, GUSD, etc. that are authored and controlled by centralized custodians, validators, princpals, issuers et.al.<br>
+    <br>DAIX work on a Protocol Controlled Value (PCV) based model that is governed by the DaixDAO. It can be utilized for rebalancing pool pricing, forking liquidity to other DEXes, repaying dissolutions or simply a store of ever-increasing liquidity. This model paired with the inherent tokenomics of DAIX give birth to an ever-increasing trifecta of growth: Liquidity, Total Value Locked (TVL) and Market Capitaliztion. These three key performance metrics are designed to keep growing forever inside the Daibase.
     <h4>Governance</h4>
-    DAOX has a limited supply of 21000 with an initial circulation of 2021. This is steadily increased by rewarding users DAIX from farms, vaults and other myriad ecosystem incentives that promote usage of Daibase and its suite of products. Inflation must not exceed 0.021% of circulating supply on any given day since genesis (32 years to full dilution at highest rate) and must not be less than 0.01% (64 years at the lowest rate).
+    DAOX has a limited supply of 21000 with an initial circulation of 2021. This is steadily increased by rewarding users DAIX from farms, vaults and other myriad ecosystem incentives that promote usage of Daibase and its suite of products. Inflation must not exceed 0.021% of circulating supply on any given day since genesis (32 years to full dilution at highest rate) and must not be less than 0.01% (64 years at the lowest rate).<br>
     <br>DAOX have the power to file a proposal and vote on existing proposals using the DaixDAO. Primary duty of the DAO is to make decisions about alloactions of Protocol Reserves for various ecosystem incentives, like farms, vaults, partnerships, infrastrucure modifications, etc.
-    <br><i>(Protocol Reserves are <b>not PCV</b> ― it comprises of non-circulating supply of DAOX, Treasuries of the KingMaker and transaction volume-based DAIX fee collections.)</i>
+    <br><i>(Protocol Reserves are <b>not PCV</b> ― it comprises of non-circulating supply of DAOX, Treasuries of the KingMaker and transaction volume-based DAIX fee collections.)</i><br>
     <br>DaixDAO entitles each DAOX holding to 10^18 (1 000 000 000 000 000 000 000) votes. Only native on-chain balances count towards voting until the development of AMB-enabled infrastructure in Daibase.
     <h4>The KingMaker</h4>
     KingMaker is a smart-contract which recieves the transactional volume-based DAIX fees. In essence, it is an open-bidding platform that entitles the highest bidder to drain the DAIX fees it recieves as the Protocol Revenue. This right holds as long as the current "heir" is not outbid by other contenders by making a bigger "sacrifice" (8% greater than the prevoius), or if they have "descended the throne". The "sacrifice" is reset to 1 cent after a period of 210 000 blocks.
-    <br><i>(A heir is eligble to "drain the coffers" as long as there's no "new heir crowning" event.)</i>
-    <br>The KingMaker can be enabled or disabled by the DaixDAO. It is most beneficial to both DAIX and DAOX holders when there is a significant value transfer ongoing in DAIX tokens continuosly. The proceeds of bids go to the Protocol Reserves, which are used by DAOX voters to allocate to a new incentive program. 
+    <br><i>(A heir is eligble to "drain the coffers" as long as there's no "new heir crowning" event.)</i><br>
+    <br>The KingMaker can be enabled or disabled by the DaixDAO. It is most beneficial to both DAIX and DAOX holders when there is a significant value transfer ongoing in DAIX tokens continuosly. The proceeds of bids go to the Protocol Reserves, which are used by DAOX voters to allocate to a new incentive program.
     <br>
     <h4>Elasticity and Dynamics</h4>
     DAIX is a rebasing token. It is designed to translate price volatility into supply volatility, maintaining the targetted $1 price efficiently. The basic mechanism consists of inflating the total supply and distributing it pro-rata among the shareholders when demand for such assets exceeds their supply. The chief indicator of such a situation is the asset’s price “overshadowing its target price”. The converse is true during the times when supply overwhelms the demand, or when the price is “under the target”, leading to deflation. Supply adjusments do not have a fixed periodic function, but instead are "on-demand". Anyone can "stabilize the DAIX" using our "BaseCannon" function, subject to a few restrictions:<br>
     <ul>
-      <strike><li>Not twice within 50 blocks</li>
-      <li>Not consecutively with the same address</li>
-      <li>Must own atleast 5 DAIX before basing</li></strike>
+      <li>Not twice within 50 blocks</li>
+      <strike><li>Not consecutively with the same address</li></strike>
+      <strike><li>Must own atleast 5 DAIX before basing</li></strike>
+    </ul>
       The expansion or contraction in DAIX supply happens via a Price Oracle (internal or external), that signals the self-aware Daibase smart contract about its real worth, in the real world. Based on this feedback, Daibase Protocol simulates an airdrop or sometimes, a burn, automatically, on its own. These airdrops (or supply slashing) keep the total supply of DAIX in check with its real-world demand, maintaining the price of 1 DAIX equal to 1 DAI , in the open-market.
 
     <h4>Interoperability</h4>
-    The DAIX contracts are readily usable with other smart contracts. Daibase smart contract has innovated a special minting capability never seen before for elastic algorithmic stablecoins. This is made possible via <code>interface IXD</code> which can be implemented with ease in new smart contracts. Additionally, it provides feedback to the smart contracts interacting with it that lets them implement further arbitrary logic even after mintin is completed.
-    <br>An example could be bot that spots arbitrage oppurtunities (either on the same chain, or even across blockchains) between two different markets (or maybe simply between two pairs). It would be able to mint DAIX at a fixed price, without inurring slippage (similar to a stop-market order), and sell the minted DAIX for a profit. Of course, humans can do this themselves too and we make the appropriate dapps available on our websites and mirrors.
-    <br>Another example could be when someone "predicts" a sell-off of DAIX. They could use their DAIX as collateral to borrow DAI from a lender, and use this DAI to mint even more DAIX, and use them to more DAI once again. This gets better than the classical uniswap leveraging examples because when minting DAIX, there's no slipping or trading fees, which makes releveraging DAIX very comfortable. 
+    The DAIX contracts are readily usable with other smart contracts. Daibase smart contract has innovated a special minting capability never seen before for elastic algorithmic stablecoins. This is made possible via <code>interface IXD</code> which can be implemented with ease in new smart contracts. Additionally, it provides feedback to the smart contracts interacting with it that lets them implement further arbitrary logic even after mintin is completed.<br>
+    <br><i>An example could be bot that spots arbitrage oppurtunities (either on the same chain, or even across blockchains) between two different markets (or maybe simply between two pairs). It would be able to mint DAIX at a fixed price, without incurring slippage (similar to a stop-market order), and sell the minted DAIX for a profit. Of course, humans can do this themselves too and we make the appropriate dapps available on our websites and mirrors.<br>
+    <br>Another example could be when someone "predicts" a sell-off of DAIX. They could use their DAIX as collateral to borrow DAI from a lender, and use this DAI to mint even more DAIX, and use them to more DAI once again. This gets better than the classical uniswap leveraging examples because when minting DAIX, there's no slipping or trading fees, which makes releveraging DAIX very comfortable.<br>
+    <br></i>
     <hr>
-    <h3>Supplement - I</h3>
-    <h4>Some other Applications and Use-cases</h4>
-    <b>Stablecoin substitute</b>
-    <br>
-    <b>Lending, Borrowing and Re-leveraging</b>
-    <br>
-    <b>Stablecoin Derivatives</b>
-    <br>
-    <b>Hedge fund stabilization</b>
-    <br>
-    <b>Synthetics (Index funds)</b>
-    <br>
-    <b>Secret spice for Chef's exotic recipe</b>
-    <br>
-    
-    <h4>Outlook</h4>
-    <b>Short-term Roadmap</b>
+    <h3>Supplement - I<br>(Applications and Use-cases)</h3>
+    <h4>Stablecoin Substitute</h4>
+    <h4>Derivatives & higher order trading</h4>
+    <h4>Lend, Borrow & Re-leverage</h4>
+    <h4>Hedge-fund Cross-Stabilization</h4>
+    <h4>Synthetics & Indexes</h4>
+    <h4>Algorithmic Stablecoins: Put & Call Options</h4>
+    <h4>Algorithmic Stablecoins: StableSwaps</h4>
+    <h4>Secret spice for Chef's exotic recipe</h4>
+
+    <h3>Supplement - II<br>(Future Outlook)</h3>
+    <h4>Short-term Roadmap</h4>
     <ul>
       <li>Launch on more blockchains</li>
       <li>Issue "tokenized tokens"</li>
       <li>Cross-chain bridging</li>
       <li>Cross-chain farming</li>
+      <li>Enable Derivatives Trading</li>
+      <li>Enable Cross-Chain Derivatives Trading</li>
     </ul>
-    <b>Final Goals</b>
+    <h4>Final Goals</h4>
     <ul>
       <li>Retire all bridged assets</li>
       <li>Unify all DAOX and DAIX using Arbitrary Message Bridge</li>
